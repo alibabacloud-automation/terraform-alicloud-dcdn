@@ -1,4 +1,4 @@
-// Domain
+# Domain
 resource "alicloud_dcdn_domain" "this" {
   count             = var.create_domain ? 1 : 0
   domain_name       = var.domain_name
@@ -15,7 +15,7 @@ resource "alicloud_dcdn_domain" "this" {
   status = var.status
 }
 
-// Domain configs
+# Domain configs
 resource "alicloud_dcdn_domain_config" "this" {
   count         = length(var.domain_configs)
   domain_name   = local.domain_name

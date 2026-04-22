@@ -7,7 +7,7 @@ module "dcdn" {
   #alicloud_dcdn_domain
   create_domain     = true
   domain_name       = "168.com"
-  resource_group_id = data.alicloud_resource_manager_resource_groups.default.groups.0.id
+  resource_group_id = data.alicloud_resource_manager_resource_groups.default.groups[0].id
   scope             = var.scope
   sources           = var.sources
   status            = var.status

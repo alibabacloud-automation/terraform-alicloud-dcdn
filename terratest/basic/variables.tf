@@ -14,11 +14,6 @@ variable "sources" {
   type        = map(string)
   default     = null
 }
-variable "status" {
-  description = "The domain status. Valid values: online, offline."
-  type        = string
-  default     = "online"
-}
 
 # DCDN Domain config variables
 variable "domain_configs" {
